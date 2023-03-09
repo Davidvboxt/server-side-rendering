@@ -1,0 +1,15 @@
+<%- include('./partials/head') %>
+
+    <section>
+        <h1>Alle Boeken</h1>
+        <% results.forEach(result=> { %>
+            <article>
+
+                <h4>Titel</h4>
+                <img src="<%= result.coverimages %>" alt="boek">
+
+            </article>
+            <% }) %>
+    </section>
+
+    <%- include('./partials/foot') %>
