@@ -1,6 +1,5 @@
 import express from 'express'
 
-// Neemt alle OBA date te grazen
 const url = 'https://zoeken.oba.nl/api/v1'
 
 // Maak een nieuwe express app
@@ -20,6 +19,11 @@ app.get('/', (request, response) => {
     console.log(data);
   })
   
+})
+
+
+app.get('/detail', (request, response) => {
+  response.render('detail')
 })
 
 // Stel het poortnummer in en start express
