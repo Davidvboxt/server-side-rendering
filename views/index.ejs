@@ -2,16 +2,31 @@
 
     <section>
         <h1>Alle Boeken</h1>
-        <% results.forEach(result=> { %>
-            <article>
+        <div class="read-more-container">
+            <% results.forEach(result=> { %>
 
-                <h4>Titel</h4>
-                <img src="<%= result.coverimages %>" alt="boek">
+                <p>
+                <article>
+                    <img class="boeken-foto" src="<%= result.coverimages %>" alt="boek">
+                    <h4>
+                        <%= result.frabl.key1 %>
+                    </h4>
+                    <p>
+                        <%= result.frabl.key2 %>
+                    </p>
 
-            </article>
-            <% }) %>
+                    <span class="read-more-text">
+                        <button>hoi</button>
+                    </span>
+
+                    </p>
+                    <span class="read-more-btn">Read More...</span>
+                </article>
+
+                <% }) %>
+        </div>
     </section>
 
     <%- include('./partials/foot') %>
 
-<%- include('./partials/foot') %>
+        <%- include('./partials/foot') %>
