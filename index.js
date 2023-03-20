@@ -21,7 +21,6 @@ app.get('/', (request, response) => {
   
 })
 
-
 app.get('/detail', (request, response) => {
   response.render('detail')
 })
